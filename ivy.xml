@@ -22,7 +22,7 @@
 		<artifact name="${project.moduleName}" type="jar" ext="jar" conf="master"/>
 	</publications>
 	<dependencies>
-		<dependency org="net.sourceforge.cobertura" name="cobertura" rev="1.9" conf="coverage->runtime(*),master(*)"/>
+		<dependency org="net.sourceforge.cobertura" name="cobertura" rev="1.9.4.1" conf="coverage->runtime(*),master(*)"/>
 		<dependency org="junit" name="junit" rev="3.8.1" force="true" conf="test->runtime(*),master(*)"/>
 	</dependencies>
 </ivy-module>
