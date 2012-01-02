@@ -23,7 +23,9 @@ public class OSUtils {
 	
 	public static final OS CURRENT_OS;
 	public static final String NEW_LINE_CHARACTER = System.getProperty("line.separator");
-
+	public static final String MAC_LINUX_FOLDER_SEPARATOR = "/";
+	public static final String WINDOWS_FOLDER_SEPARATOR = "\\";
+	
 	static {
 		String os = System.getProperty("os.name").toLowerCase();
 		
