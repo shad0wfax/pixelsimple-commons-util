@@ -1,3 +1,4 @@
 Commons Util Repository
 -------------------------------
-This repo contains the simeple utility classes that can be used across projects. Since it belongs to the commons area, it can be widely used.. 
+This repo contains the simeple utility classes that can be used across projects. Since it belongs to the commons area, it can be used across other modules judiciously.
+This module ensures that it is not going to be dependent on other commons modules itself. Hence it guarantees that it is at the bottom of the chain and can be consumed by other modules.
