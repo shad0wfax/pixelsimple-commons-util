@@ -39,6 +39,14 @@ public class OSUtils {
 		}
 	}
 	
+	public static String folderSeparator() {
+		if (CURRENT_OS == OS.WINDOWS) {
+			return WINDOWS_FOLDER_SEPARATOR;
+		} else{
+			return MAC_LINUX_FOLDER_SEPARATOR;
+		}
+	}
+	
 	/**
 	 * Just to print out in case needed.
 	 * @param args
