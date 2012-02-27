@@ -47,6 +47,19 @@ public class OSUtils {
 		}
 	}
 	
+	public static String appendFolderSeparator(String folderPath) {
+		// Sanitize this input - add the trailing / or \ if needed. Will simplify the paths to other directories.
+		if (folderPath.endsWith(OSUtils.folderSeparator()))
+				return folderPath;
+		
+		// Windows will accept '/' so, let it be.
+		if (OSUtils.CURRENT_OS == OSUtils.OS.WINDOWS && folderPath.endsWith("/")) 
+				return folderPath;
+		
+		return folderPath + OSUtils.folderSeparator();
+		
+	}
+	
 	/**
 	 * Just to print out in case needed.
 	 * @param args
