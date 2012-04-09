@@ -47,6 +47,18 @@ public class OSUtils {
 		}
 	}
 	
+	public static boolean isWindows() {
+		return CURRENT_OS == OS.WINDOWS;
+	}
+	
+	public static boolean isMac() {
+		return CURRENT_OS == OS.MAC;
+	}
+	
+	public static boolean isLinux() {
+		return CURRENT_OS == OS.LINUX;
+	}
+	
 	public static String appendFolderSeparator(String folderPath) {
 		// Sanitize this input - add the trailing / or \ if needed. Will simplify the paths to other directories.
 		if (folderPath.endsWith(OSUtils.folderSeparator()))
