@@ -64,9 +64,12 @@ public class OSUtils {
 		if (folderPath.endsWith(OSUtils.folderSeparator()))
 				return folderPath;
 		
-		// Windows will accept '/' so, let it be.
-		if (OSUtils.CURRENT_OS == OSUtils.OS.WINDOWS && folderPath.endsWith("/")) 
-				return folderPath;
+		// Windows will accept '/' but have it changed to \ to ensure any scripts receiving folders don't break accidentally
+		if (OSUtils.CURRENT_OS == OSUtils.OS.WINDOWS && folderPath.endsWith("/")) {
+			// Trim off the last character.
+			folderPath = folderPath.substring(0, folderPath.length() - 1);
+		}
+				
 		
 		return folderPath + OSUtils.folderSeparator();
 		
