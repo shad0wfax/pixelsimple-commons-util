@@ -429,6 +429,23 @@ public abstract class Assert {
 	}
 
 	/**
+	 * Assert that an object is not <code>null</code> . <pre class="code">Assert.notNull(clazz,
+	 * "The class must not be null");</pre>
+	 * 
+	 * @param object
+	 *            the object to check
+	 * @param message
+	 *            the exception message to use if the assertion fails
+	 * @throws IllegalArgumentException
+	 *             if the object is <code>null</code>
+	 */
+	public static void notNullAndNotEmpty(String object, String message) {
+		if (StringUtils.isNullOrEmpty(object)) {
+			throw new IllegalArgumentException(message);
+		}
+	}
+
+	/**
 	 * Assert a boolean expression, throwing {@link IllegalStateException} if the test result is
 	 * <code>false</code>.
 	 * <p>
