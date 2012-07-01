@@ -34,7 +34,7 @@ import java.util.Properties;
 
 /**
  * IMPORTANT NOTICE!!! This class was modified from Springsource (Springframework) and is with in
- * the Apache license requirements. Additional 3M copyright has been included. All the original
+ * the Apache license requirements. Additional Pixelsimple copyright has been included. All the original
  * copyright, patent, trademark, and attribution notices are kept AS IS.
  * 
  * 
