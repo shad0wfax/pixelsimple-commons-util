@@ -14,14 +14,6 @@
  * limitations under the License.
  */
 
-// 3M specific copyright added: 
-/* This is an unpublished work containing 3M confidential and proprietary
- * information. Disclosure, use or reproduction without the written
- * authorization of 3M is prohibited. If publication occurs, the following
- * notice applies:
- *      Copyright © 2009, 3M. All rights reserved.
- */
-
 package com.pixelsimple.commons.util;
 
 import java.util.Arrays;
